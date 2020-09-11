@@ -1,0 +1,14 @@
+[
+  {
+    "name": "tiger",
+    "type": "authorize",
+    "password": "123123",
+    "alg": "HS256"
+  },
+  {
+    "name": "tiger",
+    "type": "decode",
+    "password": "123123",
+    "alg": "HS256"
+  }
+]

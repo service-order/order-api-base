@@ -1,15 +1,8 @@
-import Router from 'koa-router'
-import users from './users-router'
-import roles from './roles-router'
-import me from './me-router'
+const _express = require('express');
+const routes = _express.Router();
 
-const router = new Router()
-const api = new Router()
+const userRoutes = require('./user.routes');
 
-api.use(users)
-api.use(roles)
-api.use(me)
+routes.use('/user', userRoutes);
 
-router.use('/v1', api.routes())
-
-export default router
+module.exports = routes;

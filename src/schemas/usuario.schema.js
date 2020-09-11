@@ -1,0 +1,21 @@
+module.exports = {
+  body: {
+    nome,
+    rg,
+    cpf,
+    cep,
+    rua,
+    numero,
+    bairro,
+    cidade,
+    estado,
+    email,
+    senha,
+    telefone,
+    celular,
+    dataExpiracao,
+    situacao,
+    permissoes,
+    dataCadastro,
+  },
+};

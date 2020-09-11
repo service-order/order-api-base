@@ -1,9 +1,10 @@
+require('dotenv/config');
 
-const PORT = 8080;
-const HOST = '0.0.0.0';
+const applicationListener = require('./configs/server');
 
-const applicationListener = require('./config/server');
+const PORT = process.env.APPLICATION_PORT;
+const HOST = process.env.APPLICATION_HOST;
 
 applicationListener.listen(PORT, HOST, () => {
-  console.log(`Running on http://${HOST}:${PORT}`);
-})
+  console.log(`Server running in ${HOST}:${PORT}`);
+});
